@@ -2,6 +2,7 @@
   <div id="app">
     <NavBar/>
     <Track/>
+    <router-view/>
   </div>
 </template>
 
