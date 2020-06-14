@@ -1,6 +1,6 @@
 <template>
     <div class="containerNav">
-        <router-link to="/menu"><img src="../assets/menuIcon.svg" class="menuIcon"></router-link>
+        <router-link :to='menuRoute'><img src="../assets/menuIcon.svg" class="menuIcon" @click="toggleMenu()"></router-link>
         <router-link to="/"><h2 class="title">MusiCreator</h2></router-link>
         <div>
         <router-link to="/login"><button class="login">Login</button></router-link>
@@ -13,6 +13,20 @@
 <script>
 export default {
     name: "NavBar",
+    data(){
+        return{
+             menuRoute:"/",
+        }
+    },
+    methods:{
+         toggleMenu(){
+             if(this.menuRoute=="/"){
+                 this.menuRoute="/menu";
+             }else{
+                 this.menuRoute="/";
+             }
+         },
+     }
 };
 </script>
 
