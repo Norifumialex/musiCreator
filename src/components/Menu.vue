@@ -1,6 +1,7 @@
 <template>
     <div class="menuBox">
         <h2 class="menuTitle">Sounds</h2>
+        <div v-if="Kicks">
         <div>
         <h4 class="subTitle" @click="displatTypes('kicks')">Kicks</h4>
         <div :style="{'display':kickDisplay}" id="kicks">
@@ -25,7 +26,8 @@
         <span class="types" v-for="c in Cymbals" :key="c">{{c}} <br></span>
         </div>
         </div>
-
+        </div>
+        <h4 v-else class="subTitle">Loading</h4>
         
     </div>
 </template>
@@ -54,6 +56,7 @@ tomsPromise.then(res =>{
 kickPromise.then(res =>{
     kickSounds=res;
 })
+
 export default {
     name: "Menu",
 data(){
@@ -73,6 +76,7 @@ methods:{
           if(id=="kicks"){
               if(this.kickDisplay=="none"){
                   this.kickDisplay="block";
+
                }else{
                    this.kickDisplay="none";
                }
