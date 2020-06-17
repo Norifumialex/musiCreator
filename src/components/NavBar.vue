@@ -3,9 +3,9 @@
         <router-link :to='menuRoute'><img src="../assets/menuIcon.svg" class="menuIcon" @click="toggleMenu()"></router-link>
         <router-link to="/"><h2 class="title">MusiCreator</h2></router-link>
         <div>
-        <router-link to="/login"><button class="login">Login</button></router-link>
-        <span class="login">/</span>
-        <router-link to="/register"><Strong class="login">Sing up </Strong></router-link>
+        <router-link to="/login"><button class="login"></button></router-link>
+        <span class="login"></span>
+        <router-link to="/register"><Strong class="login"></Strong></router-link>
         </div>
     </div>
 </template>

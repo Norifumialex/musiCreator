@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 export const config = {
   apiKey: "AIzaSyBCWIGqng3uP2Yje70nc84aSb5NbUc1nr4",
@@ -11,6 +11,6 @@ export const config = {
   measurementId: "G-KL13PR50WH"
 };
 
-export const firebaseIni=firebase.initializeApp(config);
-export const storage=firebase.storage();
-export const soundsDb=firebase.database();
+export const firebaseIni = firebase.initializeApp(config);
+export const storage = firebase.storage();
+export const soundsDb = firebase.database();

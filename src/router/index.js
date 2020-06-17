@@ -12,11 +12,11 @@ export default new Router({
           component: Home
       },
       {
-          path:'/register',
-          name:'register',
-          component: Register
-      },
-      {
+        path:'/register',
+        name:'register',
+        component: Register
+    },
+    {
         path:'/menu',
         name:'menu',
         component: Menu
